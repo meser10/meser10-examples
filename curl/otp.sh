@@ -68,6 +68,6 @@ case "${CODE_FIELD}" in
     ;;
 esac
 
-# There is no per-message delivery status and no webhook, and MessageID comes
-# back as 0, so "accepted for delivery" is as much as you get. A one-time
-# password cannot be confirmed as having reached the handset.
+# Worth having on any one-time-password screen: a resend after a short wait,
+# and a second route in. The gateway sends no callbacks, so nothing will push
+# an event to your code.

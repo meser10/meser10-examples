@@ -77,7 +77,6 @@ def main() -> int:
 if __name__ == "__main__":
     raise SystemExit(main())
 
-# One honest caveat before building a login on this: "accepted for delivery" is
-# as much as the gateway will tell you. There is no per-message delivery status
-# and no webhook, so you cannot confirm the code reached the handset. Offer a
-# resend after a short wait, and a second route in, rather than assuming delivery.
+# Worth having on any one-time-password screen: a resend after a short wait,
+# and a second route in. The gateway sends no callbacks, so nothing will push
+# an event to your code.

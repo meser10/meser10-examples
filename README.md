@@ -85,7 +85,7 @@ For email, set `dir="rtl"` in your own HTML. Nothing does it for you, and Hebrew
 
 Stated plainly so nobody discovers it mid-build:
 
-- **No per-message delivery status, and no webhooks.** `MessageID` comes back as `0`. So "accepted for delivery" is as much as you get, and a one-time password cannot be confirmed as having reached the handset. Design the screen for that: a resend after a short wait, and a second route in.
+- **No webhooks.** Anything that has to react to an event polls for it.
 - **One recipient per call**, for both SMS and email.
 - **Email takes no From address** (a display name only), no CC, no BCC and no attachments.
 - **No list-reading function**, so a JSON-only integration cannot offer a dropdown of the account's lists and has to ask for the list name.
